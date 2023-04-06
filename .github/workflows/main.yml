@@ -1,0 +1,10 @@
+on: workflow_dispatch
+jobs:
+  the_job:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: this
+        env:
+          THING: yoda
+        run: ./script.sh
